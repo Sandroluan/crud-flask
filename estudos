@@ -1,0 +1,21 @@
+pontos positivos
+
+Estrutura Básica do Flask:
+
+O código segue a estrutura básica de uma aplicação Flask, com rotas definidas para diferentes funcionalidades.
+Uso do SQLAlchemy:
+
+O SQLAlchemy é configurado corretamente para gerenciar o banco de dados SQLite (sqlite:///usuario.db).
+Modelo de Dados:
+
+A classe usuario define o modelo da tabela no banco de dados com colunas id, nome e email.
+Rotas Implementadas:
+
+/: Lista todos os usuários.
+/novo: Permite criar um novo usuário.
+Banco de Dados:
+
+O banco de dados é inicializado com db.create_all() no bloco if __name__ == '__main__'.
+
+Problemas e Melhorias
+
