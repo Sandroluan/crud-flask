@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>usuario</h1>
+    <a href="{{ url_for ('novo')}}">novo usuario</a>
+    <ul>
+      {%for u in usuarios %}
+      <li>
+        {{u.nome}} - {{u.email}}
+        <a href="{{url_for ('editar', id=u.id)}}">Editar</a>
+        <a href="{{url_for ('deletar', id=u.id)}}">deletar</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
