@@ -15,5 +15,4 @@ Banco de Dados:
 
 O banco de dados é inicializado com db.create_all() no bloco if __name__ == '__main__'.
 
-Problemas e Melhorias
 
